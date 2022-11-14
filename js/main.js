@@ -11,7 +11,8 @@ $(() => {
             switch(db.currentUser.type)
             {
                 case 0:
-                    window.open('member_dashboard.html','_self',false)
+                    //window.open('member_dashboard.html','_self',false)
+                    member_dashboard.call();
                     break;
                 case 1:
                     break;

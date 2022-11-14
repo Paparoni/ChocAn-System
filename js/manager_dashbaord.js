@@ -1,14 +1,8 @@
-// Retrieve the database
-/*var db = JSON.parse(localStorage.getItem("db"));
-$( document ).ready( () => {
-    $('#welcome').text('Welcome to the Member Dashboard, '+ db.currentUser.name.split()[0]);
-});
-*/
-var member_dashboard = {}
-member_dashboard.call = () => {
+var manager_dashboard = {}
+manager_dashboard.call = () => {
     bootbox.dialog({ 
         // The Title
-        title: 'Welcome to the Member Dashboard, '+db.currentUser.getName(),
+        title: 'Welcome to the Manager Dashboard, '+db.currentUser.getName(),
         // The Message, but reall you could put any html you want here
         message: '<p>You stupid fat bitch, you love chocolate don\'t you?</p>',
         size: 'large',

@@ -154,12 +154,32 @@ class Member extends User {
     }
 
 }
-class Provider {
-    constructor(id, name, fee)
+class Provider extends User {
+    constructor(username, password, id, name)
     {
+        super(username, password)
+        this.type = 2;
         this.id = id;
         this.name = name;
-        this.fee = fee;
+        this.services = [];
+    }
+}
+
+class Service {
+    constructor(id, name, cost){
+        this.id = id;
+        this.name = name;
+        this.cost = cost;
+    }
+
+    getCost() 
+    {
+        return this.cost;
+    }
+
+    getName()
+    {
+        return this.name;
     }
 }
 // Manager/Operator class
